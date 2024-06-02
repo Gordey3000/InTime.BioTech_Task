@@ -38,11 +38,11 @@ docker compose up
 
 Дождаться сборки и запуска всех контейнеров и в другом окне терминала выполнить миграции:
 ```
-docker compose exec backend python manage.py makemigrations
+docker compose exec web-app python manage.py makemigrations
 ```
 
 ```
-docker compose exec backend python manage.py migrate 
+docker compose exec web-app python manage.py migrate 
 ```
 Проект будет доступен по адресу: http://localhost/
 
