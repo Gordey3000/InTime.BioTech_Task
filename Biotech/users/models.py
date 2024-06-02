@@ -11,7 +11,6 @@ class User(AbstractUser):
     - bio: Биография пользователя.
     - first_name: Имя пользователя.
     - last_name: Фамилия пользователя.
-    - confirmation_code: Код подтверждения для регистрации.
     """
     email = models.EmailField(
         verbose_name='Электронная почта',
@@ -27,13 +26,6 @@ class User(AbstractUser):
     first_name = models.CharField(max_length=100)
 
     last_name = models.CharField(max_length=100)
-
-    # confirmation_code = models.CharField(
-    #     verbose_name='код подтверждения',
-    #     max_length=255,
-    #     null=True,
-    #     default='XXXX'
-    # )
 
     class Meta:
         ordering = ('username',)

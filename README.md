@@ -95,4 +95,3 @@ docker compose exec backend python manage.py migrate
 - bio: Биография пользователя.
 - first_name: Имя пользователя.
 - last_name: Фамилия пользователя.
-- confirmation_code: Код подтверждения для регистрации.
